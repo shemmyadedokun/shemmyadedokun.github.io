@@ -5,11 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oluwasemilore Adedokun website  </title>
     <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script src ="main.js"></script>
 </head>
 <body>
+
+    <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" > Home </a> </li>
+          <li><a href= "projects.html"> Projects</a></li>
+          <li><a href= "about.html" > About </a> </li>
+          <li class = "dropdown"> More
+            <ul class= "dropdown-content">
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </li>
+        </ul>
+    </nav>
+      
+    <img id="MyPic" src="IMG_6933.jpeg" alt="Picture of Shemmy" onclick="enlargeImage()" onmouseout = "resetImageSize()"/>
+
     <h1>Shemmy's Educational Journey</h1>
-   
-    
    
 <div class="content">
     <div class="table">
@@ -46,7 +62,7 @@
             </div> 
         </div>
     </div>
-
+</div>
 
         <h2>Coursework and Key Learnings</h2>
         <p>I pursued a Bachelors degree in Business Technology Management, a program that teaches you to design appropriate business procesees and solutions,<br>
@@ -107,8 +123,12 @@
             </table>
 </div>
      <div class="links"> 
-        <p>Check out my <a href="https://www.linkedin.com/in/shemmyadedokun/">LinkedIn Profile</a> for more details.</p>
-        <p>Link to my <a href="https://docs.google.com/document/d/1lzHPUKKo_9BBZPpBvinn12f8azQRgKVn/edit?usp=sharing&ouid=102826040920838603801&rtpof=true&sd=true">Resume</a></p>
-</div>  
+        <p>Check out my <a id="linkedin" href="https://www.linkedin.com/in/shemmyadedokun/">LinkedIn Profile</a> for more details.</p>
+        <p>Link to my <a id="resume" href="https://docs.google.com/document/d/1lzHPUKKo_9BBZPpBvinn12f8azQRgKVn/edit?usp=sharing&ouid=102826040920838603801&rtpof=true&sd=true">Resume</a></p>
+</div> 
+
+<button onclick="promptName()">Enter your name</button>   
+<div id="nameDisplay"></div>
+
     </body>
 </html>
