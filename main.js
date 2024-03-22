@@ -27,3 +27,5 @@ function hoverEffect(element) {
     element.style.color = 'blue'; // Change back to the original color 
   }
   
+  document.getElementById('myForm').addEventListener('submit', function(event) {
+    event.preventDefault(); }

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script src ="main.js"></script>
+</head>
+<body>
+    <form id="myForm">
+        <fieldset>
+            <legend>Contact Shemmy</legend>
+    
+            <!-- Single Text Field -->
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required><br><br>
+    
+             <!-- Single Text Field -->
+             <label for="email">Email:</label>
+             <input type="text" id="email" name="email" required><br><br>
+
+            <!-- Radio Buttons -->
+            <label>How did you find my portfolio?</label><br>
+            <input type="radio" id="linkedin" name="source" value="LinkedIn">
+            <label for="linkedin">LinkedIn</label><br>
+            <input type="radio" id="google" name="source" value="Google">
+            <label for="google">Google</label><br>
+            <input type="radio" id="referral" name="source" value="Referral">
+            <label for="referral">Referral</label><br>
+            <input type="radio" id="other" name="source" value="Other">
+            <label for="other">Other</label><br><br>
+
+            
+                <label>Preferred Contact Method</label><br>
+                <input type="radio" id="emailContact" name="contactMethod" value="Email" required>
+                <label for="emailContact">Email</label><br>
+                <input type="radio" id="phoneCall" name="contactMethod" value="Phone Call">
+                <label for="phoneCall">Phone Call</label><br>
+                <input type="radio" id="videoCall" name="contactMethod" value="Video Call">
+                <label for="videoCall">Video Call</label><br><br>
+            
+    
+            <!-- Check Boxes -->
+            <label>What services are you interested in?</label><br>
+            <input type="checkbox" id="webdesign" name="service" value="WebDesign">
+            <label for="webdesign">Web Design</label><br>
+            <input type="checkbox" id="uxdesign" name="service" value="UXDesign">
+            <label for="uxdesign">UX Design</label><br>
+            <input type="checkbox" id="development" name="service" value="Development">
+            <label for="development">Development</label><br>
+            <input type="checkbox" id="marketing" name="service" value="Marketing">
+            <label for="marketing">Marketing</label><br><br>
+    
+            <!-- Multiple Text Field -->
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+            
+
+            <!-- Additional Elements -->
+    
+            <label for="date">Project Start Date:</label>
+            <input type="date" id="date" name="date" required><br><br>
+    
+            <label for="budgetRange">Budget Range:</label>
+            <select id="budgetRange" name="budgetRange" required>
+                <option value="Under $500">Under $500</option>
+                <option value="$500 - $1000">$500 - $1000</option>
+                <option value="$1000 - $5000">$1000 - $5000</option>
+                <option value="Over $5000">Over $5000</option>
+            </select><br><br>
+
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Clear">
+        </fieldset>
+    </form>
+    
+    <script src="script.js"></script>
+</body>
+</html>
