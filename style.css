@@ -11,7 +11,7 @@
 
 h1{
     font-size: 28pt;
-    color:#011638;
+    color:#black;
     font-family: Garamond;
 }
 
@@ -23,13 +23,13 @@ h2{
 
 h3{
     font-size: 20pt;
-    color:#9055A2;
+    color:#black;
     font-family: Helvetica;
 }
 
 p{
     font-size: 12pt;
-    color:#d499b9;
+    color:#2e294e;
     font-family: Georgia;
 }
 
@@ -49,7 +49,7 @@ table {
 
 th, td {
     border: 1px ;
-    color:#b37ba4; 
+    color:#2e294e; 
     padding: 8px; 
     text-align: left;
 }
